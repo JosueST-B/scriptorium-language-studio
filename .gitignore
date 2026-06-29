@@ -1,0 +1,11 @@
+# Local Netlify folder
+.netlify
+
+# Generated publish bundle
+dist/
+
+# Local generated translation cache
+translation-cache.json
+
+# Local helper
+abrir-scriptorium.bat
