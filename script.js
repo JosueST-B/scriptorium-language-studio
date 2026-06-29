@@ -85,7 +85,7 @@ siteNav.querySelectorAll("a").forEach((link) => {
 });
 
 if (languageSelect) {
-  const savedLanguage = localStorage.getItem("scriptorium-language") || "en";
+  const savedLanguage = localStorage.getItem("scriptorium-language") || "es";
   languageSelect.value = savedLanguage;
   applyLanguage(savedLanguage);
 
