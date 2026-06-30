@@ -1273,3 +1273,12 @@ textarea:focus-visible,
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+
+/* Infographics (visual notes) */
+.infographic { max-width: 540px; margin: 46px auto 8px; text-align: center; }
+.infographic img { width: 100%; height: auto; border-radius: 16px;
+  border: 1px solid #e6e0d2; box-shadow: 0 12px 32px rgba(19,33,59,0.14); }
+.infographic figcaption { margin-top: 12px; font-size: 0.86rem; color: #6b7280; }
+.infographic figcaption a { color: #B8932F; font-weight: 600; text-decoration: none; }
+.infographic figcaption a:hover { text-decoration: underline; }
