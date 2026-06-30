@@ -156,6 +156,26 @@ quoteForm.addEventListener("submit", (event) => {
     noteLine[lang] || noteLine.en
   ].join("\n");
 
+  // Open a prefilled email so the request can be sent in one click.
+  const subjectByLang = {
+    en: "Scriptorium service request",
+    es: "Solicitud de servicio - Scriptorium",
+    de: "Scriptorium Serviceanfrage",
+    fr: "Demande de service Scriptorium",
+    pt: "Solicitação de serviço - Scriptorium",
+    it: "Richiesta di servizio Scriptorium",
+    ru: "Запрос услуги Scriptorium",
+    cs: "Žádost o službu Scriptorium",
+    zh: "Scriptorium 服务申请",
+    ja: "Scriptorium サービス依頼",
+    he: "בקשת שירות - Scriptorium",
+    ar: "طلب خدمة - Scriptorium"
+  };
+  const subject = subjectByLang[lang] || subjectByLang.en;
+  const mailto = "mailto:josuepug@gmail.com?subject=" +
+    encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+  window.location.href = mailto;
+
   if (!navigator.clipboard) {
     formNote.textContent = message;
     return;
