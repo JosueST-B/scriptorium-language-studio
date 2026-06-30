@@ -1282,3 +1282,15 @@ textarea:focus-visible,
 .infographic figcaption { margin-top: 12px; font-size: 0.86rem; color: #6b7280; }
 .infographic figcaption a { color: #B8932F; font-weight: 600; text-decoration: none; }
 .infographic figcaption a:hover { text-decoration: underline; }
+
+
+/* Infographic gallery (visual notes) */
+.info-gallery-title { max-width: 1040px; margin: 40px auto 10px; text-align: center;
+  font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: #B8932F; font-weight: 700; }
+.info-gallery { max-width: 1040px; margin: 0 auto; display: grid; gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.info-gallery figure { margin: 0; }
+.info-gallery img { width: 100%; height: auto; display: block; border-radius: 14px;
+  border: 1px solid #e6e0d2; box-shadow: 0 10px 26px rgba(19,33,59,0.13); transition: transform .15s ease, box-shadow .15s ease; }
+.info-gallery a:hover img { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(19,33,59,0.2); }
+.info-gallery figcaption { margin-top: 10px; text-align: center; font-size: 0.84rem; color: #6b7280; }
